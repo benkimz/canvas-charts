@@ -1,0 +1,27 @@
+0 deg -> ox = mid x + r ==> max x value
+90 deg -> ox = (ox, at 0 deg) - r ==> max x value - r ==> mid x
+180 deg -> ox = mid x - r
+360 deg -> ox = mid x + r ==> max x value
+
+
+
+e.g:
+	mid: {x=200, y=250}
+	r = 20
+Degree	mid x	x pos	diff x	y pos	diff y
+0	200	220	+20	250	0
+90	200	200	0	250	+20
+180	200	180	-20	250	0
+270	200	200	0	250	-20
+360	200	220	+20	250	0
+
+---The x values data take a cosine wave--
+
+[diff_x / r] = cos(theta)
+
+To get the diff at any angle, diff_x = r cos(theta)
+
+--The y values data take a sine wave--
+
+
+
